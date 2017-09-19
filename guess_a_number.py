@@ -1,48 +1,81 @@
+
+        
 import random
-#comfig
 
+# config
 low = 1
-high = 100
-limit = 10
+high = 10
+limit = 4
 
-            
+# helper functions
+def show_start_screen():
+    print("**************************")
+    print("**** Guess a Number ! ****")
+    print("**************************")
 
-#helper functions
+def show_credits():
+    print("This dope game was created by.... YOUR MOM!!!!.")
+    
 def get_guess():
     while True:
-        guess = input ("guess a number.")
+        guess = input("Guess a number: ")
 
         if guess.isnumeric():
             guess = int(guess)
             return guess
         else:
-            print ("you must enter a number.")
+            print("You must enter a number.")
 
-#start game
-rand = random.randint(low, high)
-print("I'm thinking of a number from "  + str(low) +  " to " + str(high) + ".");
+def pick_number():
+    print("I'm thinking of a number from " + str(low) + " to " + str(high) +".")
 
-guess = -1
-tries = 0
+    return random.randint(low, high)
 
-#play game
-
-while guess != rand and tries < limit:
-    guess = get_guess
-    
+def check_guess(guess, rand):
     if guess < rand:
         print("You guessed too low.")
     elif guess > rand:
         print("You guessed too high.")
+
+def show_result(guess, rand):
+    if guess == rand:
+        print("You win! Your so good at this now move out of your moms basement and go get a life.")
     else:
-        print("You got it!")
+        print("you are so stupid! you should be deleted out of space and time. The number was " + str(rand) + ".")
 
-    tries += 1
-        
-#end game
+def play_again():
+    while True:
+        decision = input("Would you like to play again? (y/n) ")
 
-if guess == rand:
-    print ("your are so good at this now go get a life!!")
+        if decision == 'y' or decision == 'yes':
+            return True
+        elif decision == 'n' or decision == 'no':
+            return False
+        else:
+            print("really?! do you know what a y or an n is.. clearly not.")
+
+def play():
+    guess = -1
+    tries = 0
+
+    rand = pick_number()
     
-else:
-    print("Game over, you just need to jumb off a building if you didn't get that the number was" + str(rand) + ".")
+    while guess != rand and tries < limit:
+        guess = get_guess()
+        check_guess(guess, rand)
+
+        tries += 1
+
+    show_result(guess, rand)
+
+
+# Game starts running here
+show_start_screen()
+
+playing = True
+
+while playing:
+    play()
+    playing = play_again()
+
+show_credits()
