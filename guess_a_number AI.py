@@ -1,8 +1,6 @@
 import random
+import math
 
-# config
-low = 1
-high = 1000
 
 
 # helper functions
@@ -21,9 +19,14 @@ def show_start_screen():
 | |   | | |_| | | | | |_) ) ____| |      | |   | |_| |_ _ 
 |_|   |_|____/|_|_|_|____/|_____)_|      |_|   |_(_)_(_)_|
                                                            """)
+    print(" what is your name? ")
+    guest_name = input()
+    return guest_name
+    
   
 def show_credits():
-    print(""" _______  _       __________________ _______          
+    print(""" This game was created by.......
+_______  _       __________________ _______          
 (  ____ \( \      \__   __/\__    _/(  ___  )|\     /|
 | (    \/| (         ) (      )  (  | (   ) || )   ( |
 | (__    | |         | |      |  |  | (___) || (___) |
@@ -34,18 +37,32 @@ def show_credits():
                                                       """)
 
     
-    
+def get_tries(current_low, current_high):
+    tries = math.ceil(math.log(((int(current_high) - int(current_low))-1),2))
+    return tries 
+                      
 def get_guess(current_low, current_high):
-   return (current_high + current_low)//2
+   return (int(current_low) + int(current_high))//2
    
+def pick_low():
+    print (" what would you like to be the low?")
+    low = input()
+    return low
 
-def pick_number():
-    print (" pick a number  between " + str ( low ) + " and " + str ( high ) + " and I will try and duess it. ")
-    ready = input("press enter when you are ready...")
+def pick_high():
+    print("What would you like the high to be?")
+    high = input()
+    return high
+
+    
+    
+def pick_number(current_low, current_high):
+    print (" pick a number  between " + str ( current_low ) + " and  " +  str ( current_high )  + " " + ( guest_name )  +  "  and I will try and duess it. ")
+    ready = input("press enter when you are ready " + ( guest_name ) + "...")
         
-def check_guess(guess):
+def check_guess(guess, guest_name):
    
-    print(" Was " +  str(guess) + " correct? ")
+    print(" Was " +  str(guess) + " correct" + (guest_name) + " ? " )
     print()
     print(" type higher if the guess was to low.")
     print()
@@ -53,23 +70,23 @@ def check_guess(guess):
     print()
     print("if the guess was right type ok")
 
-    t = input()
-    if t == str("higher"):
+    d = input()
+    d = d.lower()
+    if d == str("higher"):
         return 1
-    if t == str("lower"):
+    if d == str("lower"):
         return -1
-    if t == str("ok"):
-        return 0 
+    if d == str("ok"):
+        return 0
 
 
 def show_result():
-    if t == 0:
-        print("yay! you win")
-    else:
-        print ("you suck!")
+    pass
 
 
 def play_again():
+    print( " I won!YAY!!")
+    
     while True:
         decision = input("Would you like to play again? (y/n) ")
 
@@ -79,18 +96,25 @@ def play_again():
             return False
         else:
             print("I don't understand. Please enter 'y' or 'n'.")
-
+      
+            
+def state_tries(tries):
+    print(" I guess the number in" + str(tries) +" tries.")
+  
 def play():
-    current_low = low
-    current_high = high
+    current_low = pick_low()
+    current_high = pick_high()
     result = -1
     
-    pick_number()
+    pick_number(current_low, current_high)
+    tries = get_tries(current_low, current_high)
+    state_tries(tries)
+    
     
     while result != 0:
         guess = get_guess(current_low, current_high)
 
-        result = check_guess(guess)
+        result = check_guess(guess, guest_name)
 
         if result == -1:
             # adjust current high
@@ -102,7 +126,7 @@ def play():
     show_result()
 
 # Game starts running here
-show_start_screen()
+guest_name = show_start_screen()
 
 playing = True
 
