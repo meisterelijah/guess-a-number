@@ -1,0 +1,172 @@
+#1 chase
+python 3.6.2 (v3.6.2:5fd33b5, Jul  8 2017, 04:14:34) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+=================== RESTART: C:/Users/elebla8624/letsgo.py ===================
+  _______                                
+(_______)                               
+ _   ___ _   _ _____  ___  ___    _____ 
+| | (_  | | | | ___ |/___)/___)  (____ |
+| |___) | |_| | ____|___ |___ |  / ___ |
+ \_____/|____/|_____|___/(___/   \_____|
+                                        
+ _______             _                    _______   _   _ 
+(_______)           | |                  (_______) | | | |
+ _     _ _   _ ____ | |__  _____  ____    _______  | | | |
+| |   | | | | |    \|  _ \| ___ |/ ___)  |  ___  | | | |_|
+| |   | | |_| | | | | |_) ) ____| |      | |   | |_| |_ _ 
+|_|   |_|____/|_|_|_|____/|_____)_|      |_|   |_(_)_(_)_|
+                                                           
+ what is your name? 
+Chase
+ what would you like to be the low?
+1
+What would you like the high to be?
+100
+ pick a number  between 1 and  100 Chase  and I will try and duess it. 
+press enter when you are ready Chase...
+ I guess the number in7 tries.
+ Was 50 correctChase ? 
+
+ type higher if the guess was to low.
+
+ type lower if the guess was to high
+
+if the guess was right type ok
+lower
+ Was 25 correctChase ? 
+
+ type higher if the guess was to low.
+
+ type lower if the guess was to high
+
+if the guess was right type ok
+higher
+ Was 37 correctChase ? 
+
+ type higher if the guess was to low.
+
+ type lower if the guess was to high
+
+if the guess was right type ok
+lowe
+ Was 37 correctChase ? 
+
+ type higher if the guess was to low.
+
+ type lower if the guess was to high
+
+if the guess was right type ok
+lower
+ Was 31 correctChase ? 
+
+ type higher if the guess was to low.
+
+ type lower if the guess was to high
+
+if the guess was right type ok
+ok
+ I won!YAY!!
+Would you like to play again? (y/n) hg
+I don't understand. Please enter 'y' or 'n'.
+Would you like to play again? (y/n) n
+ This game was created by.......
+_______  _       __________________ _______          
+(  ____ \( \      \__   __/\__    _/(  ___  )|\     /|
+| (    \/| (         ) (      )  (  | (   ) || )   ( |
+| (__    | |         | |      |  |  | (___) || (___) |
+|  __)   | |         | |      |  |  |  ___  ||  ___  |
+| (      | |         | |      |  |  | (   ) || (   ) |
+| (____/\| (____/\___) (___|\_)  )  | )   ( || )   ( |
+(_______/(_______/\_______/(____/   |/     \||/     \|
+                                                      
+>>> 
+
+
+
+
+
+
+
+#2 alejandro
+  _______                                
+(_______)                               
+ _   ___ _   _ _____  ___  ___    _____ 
+| | (_  | | | | ___ |/___)/___)  (____ |
+| |___) | |_| | ____|___ |___ |  / ___ |
+ \_____/|____/|_____|___/(___/   \_____|
+                                        
+ _______             _                    _______   _   _ 
+(_______)           | |                  (_______) | | | |
+ _     _ _   _ ____ | |__  _____  ____    _______  | | | |
+| |   | | | | |    \|  _ \| ___ |/ ___)  |  ___  | | | |_|
+| |   | | |_| | | | | |_) ) ____| |      | |   | |_| |_ _ 
+|_|   |_|____/|_|_|_|____/|_____)_|      |_|   |_(_)_(_)_|
+                                                           
+ what is your name? 
+alejandro
+ what would you like to be the low?
+1
+What would you like the high to be?
+100
+ pick a number  between 1 and  100 alejandro  and I will try and duess it. 
+press enter when you are ready alejandro...
+ I guess the number in7 tries.
+ Was 50 correctalejandro ? 
+
+ type higher if the guess was to low.
+
+ type lower if the guess was to high
+
+if the guess was right type ok
+lower
+ Was 25 correctalejandro ? 
+
+ type higher if the guess was to low.
+
+ type lower if the guess was to high
+
+if the guess was right type ok
+higher
+ Was 37 correctalejandro ? 
+
+ type higher if the guess was to low.
+
+ type lower if the guess was to high
+
+if the guess was right type ok
+higher
+ Was 43 correctalejandro ? 
+
+ type higher if the guess was to low.
+
+ type lower if the guess was to high
+
+if the guess was right type ok
+lower
+ Was 40 correctalejandro ? 
+
+ type higher if the guess was to low.
+
+ type lower if the guess was to high
+
+if the guess was right type ok
+lower
+ Was 38 correctalejandro ? 
+
+ type higher if the guess was to low.
+
+ type lower if the guess was to high
+
+if the guess was right type ok
+lower
+ Was 37 correctalejandro ? 
+
+ type higher if the guess was to low.
+
+ type lower if the guess was to high
+
+if the guess was right type ok
+ok
+ I won!YAY!!
+Would you like to play again? (y/n) 
